@@ -1,22 +1,4 @@
----
-title: "decomplex1"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{six-barcodes_vingette}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-```{r setup}
-
-```
+#decomplex1
 
 <h3> by John Bassett  
 A fork of deMULTIplex by Chris McGinnis  
