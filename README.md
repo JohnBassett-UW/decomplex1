@@ -52,7 +52,7 @@ This provides a heatmap to identify barcode clusters and visualize the cross con
 
 Note that color corresponds with barcode counts that are above the barcode geometric mean. Counts below the geometric mean appear gray.
 
-![sample barcode space](plotHashes.png)
+![sample barcode space](/vignettes/plotHashes.png)
 
 ## Classify Nuclei
 This next part is somewhat opaque, but performs barcode classifcation for each UMI. At this stage an estimation of the proportion of doublets is used to threshold barcode distributions. The sample classification workflow here is identical to deMULTIplex. The key difference is the method by which the distribution thresholds are selected. 
@@ -97,19 +97,19 @@ while (counter >= 0) {
 
 In this example a single distinct mode is visibile before classification. The majority of the classifiable nuclei are distributed broadly. The minimum threshold is now selected by the mode and the max threshold is selected to adequately classify doublets. 
 
-![before thresholding](Sample_barcode_original.png)
+![before thresholding](/vignettes/Sample_barcode_original.png)
 
 
 
 After classification is finished and negatives have been removed, two modes are clearly visible. The larger mode (blue line) contains true negatives for the specified barcode and the smaller mode contains the stable barcode calls.
 
-![Sample thresholding](SampleBarcodeThresholding.png)
+![Sample thresholding](/vignettes/SampleBarcodeThresholding.png)
 
 
 
 This step ends with the final optimization of Singlets to doublets to negatives.
 
-![optimization](Optimization.png)
+![optimization](/vignettes/Optimization.png)
 
 
 
@@ -117,7 +117,7 @@ Already if classifications are visualized, barcodes for most nuclei can be accur
 
 
 
-![Classifications](Classification.png)
+![Classifications](/vignettes/Classification.png)
 
 
 
@@ -143,7 +143,7 @@ bar.UMAP.final[names(final.calls.rescued), "Stable"] <- final.calls.rescued
 ggplot(bar.UMAP.final, aes(x=UMAP1, y=UMAP2, color=Stable)) + geom_point(size=0.5) + theme_classic() + scale_color_manual(values=c("dodgerblue","goldenrod","darkred","seagreen","darkorchid3","pink","black","grey"))
 ```
 
-![Negative Reclassification](Reclassification.png)
+![Negative Reclassification](/vignettes/Reclassification.png)
 
 
 ## Save calls and generate QC statistics
