@@ -16,11 +16,12 @@ https://github.com/chris-mcginnis-ucsf/MULTI-seq1
 
 ## Setup
 ### installation
-    devtools::install_github('JohnBassett-UW/decomplex')
+    devtools::install_github('JohnBassett-UW/decomplex1')
     library(decomplex1)
 
 ### load sample data
 The sample data R object can be found in /vignettes and is called bar.table1.robj.
+
     load("path-to-file/bar.table1.robj")
 
 ## Formatting the data
