@@ -17,6 +17,7 @@ https://github.com/chris-mcginnis-ucsf/MULTI-seq1
 ## Setup
 ### installation
     devtools::install_github('JohnBassett-UW/decomplex')
+    library(decomplex1)
 
 ### load sample data
     load("path-to-file/bar.table1.robj")
@@ -96,7 +97,7 @@ while (counter >= 0) {
 } 
 ```
 
-In this example a single distinct mode is visibile before classification. The majority of the classifiable nuclei are distributed broadly. The minimum threshold is now selected by the mode and the max threshold is selected to adequately classify doublets. 
+In this example a single distinct mode is visibile before classification and the majority of the classifiable nuclei are distributed broadly to the right of the mode. The minimum threshold is now selected by the mode and the max threshold is selected to adequately classify doublets. 
 
 ![before thresholding](/vignettes/Sample_barcode_original.png)
 
