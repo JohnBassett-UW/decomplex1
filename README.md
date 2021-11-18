@@ -7,7 +7,7 @@ A fork of deMULTIplex by Chris McGinnis
 
 
 
-The decomplex1 software is currently a protoype. It was developed for a specific use-case of the deMULTIplex algorithm, i.e. small numbers (<10) of antibody barcoded samples originating from frozen tumor slice culture. The necessity of this version arises from the dramatic distribution changes that occur in hashing libraries derived from antibody-barcoded frozen tumor samples as compared with PBMCs barcoded with lipid-modified oligos. 
+The decomplex1 software is currently a protoype. It was developed for a specific use-case of the deMULTIplex algorithm, i.e. few (<10) antibody barcoded samples originating from frozen tumor slice culture. The necessity of this version arises from the dramatic distribution changes that occur in hashing libraries derived from antibody-barcoded frozen tumor samples as compared with PBMCs barcoded with lipid-modified oligos. 
 
 
 For more information on deMULTIplex see: 
@@ -25,14 +25,14 @@ https://github.com/chris-mcginnis-ucsf/MULTI-seq1
 decomplex1 will format barcode count matrices that are generated using either _CITE-seq count_ or _MULTIseq alignment suite_. 
 
     f.bar.table <- data.format(bar.table1)
-This sample dataset was generated with _MULTI_seq alignment suite_. data.format() simply casts the data to class matrix and removes all the uninformative columns. 
+This sample dataset was generated with _MULTI_seq alignment suite_. In this case the function data.format() simply casts the data to class matrix and removes all the uninformative columns. 
 ``` 
 Attempting to cast object type data.frame to matrix   
 Success.     
 2 uninformative columns removed: nUMI nUMI_total     
 rows: 12145, columns: 6 
 ```
-For data generated using other software, decomplex1 expects UMI's as rows and barcodes as columns.  
+If you are using data generated using other software, decomplex1 expects UMI's as rows and barcodes as columns.  
 
 It is good practice to view the data at this stage anyways and make sure that it is formatted correctly.
 
@@ -41,15 +41,15 @@ It is good practice to view the data at this stage anyways and make sure that it
 ![sample matrix](/vignettes/Capture_matrix.PNG)
 
 ## Generate barcode space
-Generate 2 dimensional embedding of the n dimensional barcode space.
+First Generate 2 dimensional embedding of the n dimensional barcode space.
 
     bar.UMAP <- barUMAP(f.bar.table)
     
-Visualize the barcode space.
+It is always a good idea to look at the barcode space after it is generated. the plotHashes function is a convenience function that quickly generates plots of the UMAP embeddings.
 
     plotHashes(bar.UMAP)
 
-This provides a heatmap to identify barcode clusters and visualize the cross contamination profile of barcodes.
+It also provides a heatmap to identify barcode clusters and visualize the cross contamination profile of barcodes.
 
 Note that color corresponds with barcode counts that are above the barcode geometric mean. Counts below the geometric mean appear gray.
 
