@@ -1,0 +1,17 @@
+Package: decomplex1
+Type: Package
+Title: decomplex1, a package for sample demultiplexing
+Version: 0.1.0
+Author: John Bassett & Chris Mcginnis
+Maintainer: John Bassett <jbassett@fredhutch.org>
+Description: decomplex1 is designed specifically to demultiplex hashed nuclei originating 
+    from frozen tumor samples. The issue with frozen tumors is that large amount of 
+    contaminating debris cause high background in hashing counts. decomplex1 features      a modified thresholding process that more accurately handles noisy count matrices. 
+License: Refer to deMULTIplex by chris mcginnis https://github.com/chris-mcginnis-ucsf/MULTI-seq
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
