@@ -1,4 +1,4 @@
-#decomplex1
+# decomplex1
 
 <h3> by John Bassett  
 A fork of deMULTIplex by Chris McGinnis  
@@ -37,7 +37,7 @@ It is good practice to view the data at this stage anyways and make sure that it
 
     View(f.bar.table)
 
-![sample matrix](Capture_matrix.PNG)
+![sample matrix](~/vignettes/Capture_matrix.PNG)
 
 ## Generate barcode space
 Generate 2 dimensional embedding of the n dimensional barcode space.
