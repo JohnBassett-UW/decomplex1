@@ -135,6 +135,11 @@ names(final.calls)<- c(names(calls), neg.cells)
 
 reclass.cells <- findReclassCells(bar.table.full, names(final.calls)[which(final.calls=="Negative")])
 reclass.res <- rescueCells(bar.table.full, final.calls, reclass.cells)
+
+###assemble call lists based on class stability###
+final.calls.rescued <- final.calls
+rescue.ind <- which(reclass.cells$ClassStability >= 4) ## Note: Value will be dataset-specific
+final.calls.rescued[rownames(reclass.cells)[rescue.ind]] <- reclass.cells$Reclassification[rescue.ind]
 ```
 
 Visualizing this shows a substantial recovery of negatives.
