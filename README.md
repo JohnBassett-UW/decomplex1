@@ -40,3 +40,9 @@ Instead of locating relative maxima, decomplex1 uses an estimate of the multiple
 When alternative thresholding is used, the vast majority of barcoded nuclei can be correctly called. There remains a population of cells that are sufficiently obscured by the background signal that they cannot be called. Note that demultiplexing by barcoding calls doublets differently than by genotype. This is becuase barcoding allows for identification of homotypic doublets where as genotyping allows for identification of heterotypic doublets. It is always beneficial to use both methods, but when the samples are all the same genotype, such as in slice culture experiments, barcoding is the only feasibly method.
 
 ![Results](/Figures/Results.jpg)
+
+###References
+
+[1] McGinnis CS, Patterson DM, Winkler J, Conrad DN, Hein MY, Srivastava V, Hu JL, Murrow LM, Weissman JS, Werb Z, Chow ED, Gartner ZJ. MULTI-seq: sample multiplexing for single-cell RNA sequencing using lipid-tagged indices. Nat Methods. 2019 Jul;16(7):619-626. doi: 10.1038/s41592-019-0433-8. Epub 2019 Jun 17. PMID: 31209384; PMCID: PMC6837808.  
+
+[2] Gaublomme, J.T., Li, B., McCabe, C. et al. Nuclei multiplexing with barcoded antibodies for single-nucleus genomics. Nat Commun 10, 2907 (2019). https://doi.org/10.1038/s41467-019-10756-2
