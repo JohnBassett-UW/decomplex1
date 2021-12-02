@@ -20,7 +20,7 @@ To improve the cost-efficiency of sequencing tumor slice culture experiments, we
 
 Hashing whole cells and fresh frozen tissue, produces little background and signal is easily isolated. The figure below shows a sample distribution of hashing data from whole cells compared with data that we generated from tumor slice cultures. 
 
-![Sample Distributions](/figures/SampleDistributions.pdf)
+![Sample Distributions](/Figures/SampleDistributions.pdf)
 
 Whole cell hashing produces very little background and the vast majority of data points (blue line) contain zero reads from contaminating hashes.  
 
