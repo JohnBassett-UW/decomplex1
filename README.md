@@ -4,7 +4,7 @@ Modified by John Bassett
 
 # Description
 
-Most cell and nuclei demultiplexing algorithms isolate signal by modeling the distribution of noise and removing it. The deMULTIplex algorithm provides the capability to optimize signal to noise by using thresholding in the signal isolation process. 
+Many cell and nuclei demultiplexing algorithms isolate signal by modeling the distribution of noise and removing it. The deMULTIplex algorithm provides the capability to optimize signal to noise by using thresholding in the signal isolation process. 
 
 decomplex1 is a version of deMULTIplex which takes advantage of signal thresholding to demultiplex noisy data by altering the the thresholding parameters for the barcode signal distribution.
 
@@ -41,8 +41,8 @@ When alternative thresholding is used, the vast majority of barcoded nuclei can 
 
 ![Results](/Figures/Results.jpg)
 
-###References
+### References
 
-[1] McGinnis CS, Patterson DM, Winkler J, Conrad DN, Hein MY, Srivastava V, Hu JL, Murrow LM, Weissman JS, Werb Z, Chow ED, Gartner ZJ. MULTI-seq: sample multiplexing for single-cell RNA sequencing using lipid-tagged indices. Nat Methods. 2019 Jul;16(7):619-626. doi: 10.1038/s41592-019-0433-8. Epub 2019 Jun 17. PMID: 31209384; PMCID: PMC6837808.  
+[1] McGinnis, C.S., Patterson, D.M., Winkler, J. et al. MULTI-seq: sample multiplexing for single-cell RNA sequencing using lipid-tagged indices. Nat Methods 16, 619–626 (2019). https://doi.org/10.1038/s41592-019-0433-8
 
 [2] Gaublomme, J.T., Li, B., McCabe, C. et al. Nuclei multiplexing with barcoded antibodies for single-nucleus genomics. Nat Commun 10, 2907 (2019). https://doi.org/10.1038/s41467-019-10756-2
