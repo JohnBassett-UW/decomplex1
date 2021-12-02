@@ -16,7 +16,7 @@ Single nucleus sequencing introduced the ability to sequence frozen tissue sampl
 
 With the introduction of tumor slice culture models, primary patient tissue samples can be cultured for days before being frozen. We have found that these frozen tumor slices can provide a significant challenge to nuclei hashing by dramatically increasing the background signal.
 
-To improve the cost-efficiency of sequencing tumor slice culture experiments, we make modifications to deMULTIplex that improve sample demultiplexing of noisy data sets 
+To improve the cost-efficiency of sequencing tumor slice culture experiments, decomplex1 makes modifications to deMULTIplex that allow sample demultiplexing of noisy data sets 
 
 ## Differences in signal distribution
 
@@ -26,7 +26,7 @@ Hashing whole cells and fresh frozen tissue, produces little background and sign
 
 
 
-In our slice culture hashing experiments the majority of data points fall in the background peak. This background also contains a signficantly greater number of reads compared with the signal.
+In our slice culture hashing experiments the majority of data points fall in the background peak. This background also contains a signficantly greater number of reads compared with whole cell hashing.
 
 deMULTIplex generates thresholds by identifying the two largest modes in the dataset (blue and red lines in the image above). Noteably, nucelei from tumor slices have no second mode and therefore require an alternative method to thresholding.
 
