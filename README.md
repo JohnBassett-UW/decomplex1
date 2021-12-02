@@ -1,6 +1,8 @@
 # decomplex1
 A fork of deMULTIplex by Chris Mcginnis  
-Modified by John Bassett
+Modified by John Bassett  
+  
+[Vignette](https://github.com/JohnBassett-UW/decomplex1/tree/main/vignettes)
 
 # Description
 
