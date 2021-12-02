@@ -22,11 +22,21 @@ Hashing whole cells and fresh frozen tissue, produces little background and sign
 
 ![Sample Distributions](/Figures/SampleDistributions.jpg)
 
-Whole cell hashing produces very little background and the vast majority of data points (blue line) contain zero reads from contaminating hashes.  
 
-By contrast, in slice culture hashing experiments we see that the majority of data points fall in the background peak. This background also contains a signficantly greater number of reads compared with the signal.
 
-## Changes to deMULTIplex
+In our slice culture hashing experiments the majority of data points fall in the background peak. This background also contains a signficantly greater number of reads compared with the signal.
 
-deMULTIplex generates thresholds by identifying the two highest modes in the dataset (blue and red lines in the image above). Noteably, nuceli from tumor slices have no second mode and therefore require an alternative method to thresholding. 
- 
+deMULTIplex generates thresholds by identifying the two largest modes in the dataset (blue and red lines in the image above). Noteably, nucelei from tumor slices have no second mode and therefore require an alternative method to thresholding.
+
+## Alternate Thresholding
+
+Instead of locating relative maxima, decomplex1 uses an estimate of the multiplet rate. This can be calculated based on the number of cells that have been loaded into the 10x controller. The actual quantity of doublets called will depend on the quantile which is optimized to call singlets. To adequatly perform a full range of quantile sweeps, it is beneficial to slightly underestimate the number of multiplets.
+
+
+![Sample Thresholding](/Figures/EstMultiplets.jpg)
+
+## Results
+
+When alternative thresholding is used, the vast majority of barcoded nuclei can be correctly called. There remains a population of cells that are sufficiently obscured by the background signal that they cannot be called. Note that demultiplexing by barcoding calls doublets differently than by genotype. This is becuase barcoding allows for identification of homotypic doublets where as genotyping allows for identification of heterotypic doublets. It is always beneficial to use both methods, but when the samples are all the same genotype, such as in slice culture experiments, barcoding is the only feasibly method.
+
+![Results](/Figures/Results.jpg)
