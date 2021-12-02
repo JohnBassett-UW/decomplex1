@@ -2,9 +2,10 @@
 A fork of deMULTIplex by Chris Mcginnis  
 Modified by John Bassett  
   
-[Vignette](https://github.com/JohnBassett-UW/decomplex1/tree/main/vignettes)
+[Vignette](https://github.com/JohnBassett-UW/decomplex1/tree/main/vignettes)  
+[base deMULTIplex package](https://github.com/chris-mcginnis-ucsf/MULTI-seq)
 
-# Description
+## Description
 
 Many cell and nuclei demultiplexing algorithms isolate signal by modeling the distribution of noise and removing it. The deMULTIplex algorithm provides the capability to optimize signal to noise by using thresholding in the signal isolation process. 
 
