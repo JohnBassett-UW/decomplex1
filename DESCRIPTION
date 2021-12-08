@@ -18,10 +18,10 @@ Depends:
     ggplot2, 
     gridExtra
 Imports:
-    KernSmooth
-    stats
-    reshape2
-    Matrix
+    KernSmooth,
+    stats,
+    reshape2,
+    Matrix,
     uwot
 Suggests: 
     knitr,
