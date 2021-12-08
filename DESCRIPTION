@@ -7,10 +7,22 @@ Maintainer: John Bassett <jbassett@fredhutch.org>
 Description: decomplex1 is designed specifically to demultiplex hashed nuclei originating 
     from frozen tumor samples. The issue with frozen tumors is that large amount of 
     contaminating debris cause high background in hashing counts. decomplex1 features      a modified thresholding process that more accurately handles noisy count matrices. 
-License: Refer to deMULTIplex by chris mcginnis https://github.com/chris-mcginnis-ucsf/MULTI-seq
+License:
+Copyright: Refer to deMULTIplex by chris mcginnis https://github.com/chris-mcginnis-ucsf/MULTI-seq
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
+Depends:
+    R (>= 4.0.5),
+    ClusterR, 
+    ggplot2, 
+    gridExtra
+Imports:
+    KernSmooth
+    stats
+    reshape2
+    Matrix
+    uwot
 Suggests: 
     knitr,
     rmarkdown
